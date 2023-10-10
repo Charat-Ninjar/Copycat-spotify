@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarTopLeft = () => {
   return (
-    <div className="rounded-md flex-col bg-neutral-900 h-full w-96 pt-4 pl-5 space-y-4">
+    <div className="rounded-md flex-col bg-neutral-900 w-96 pt-4 pl-5 space-y-4">
       <div className="flex gap-3 icon ">
         <svg
           role="img"

@@ -8,7 +8,7 @@ const {albumData} = useData()
 
   return (
     
-    <div className="h-[1000px]" 
+    <div className="h-full" 
       style={{ overflowY: "scroll" }}>
       {albumData.map((data, index) => (
         <div key={index} className="flex h-16 gap-4 mt-4 text-white">

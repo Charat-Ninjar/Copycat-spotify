@@ -5,11 +5,11 @@ import AlbumData from "./AlbumData";
 
 const NavbarContainer = () => {
   return (
-    <div className="flex-col space-y-1.5 navbox pt-2 container-box h-full">
+    <div className="flex-col space-y-1.5 navbox pt-2 container-box ">
       <div className="flex-grow">
         <NavbarTopLeft />
       </div>
-      <div className="h-max">
+      <div className="">
         <NavbarBottomLeft/>
 
       </div>

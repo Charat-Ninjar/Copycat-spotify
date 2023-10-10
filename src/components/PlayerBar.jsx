@@ -3,8 +3,8 @@ import React from "react";
 
 const PlayerBar = () => {
     return(
-        <div className=" bg-black player-box">
-
+        <div className=" bg-black player-box h-16">
+            test
         </div>
     )
 }
