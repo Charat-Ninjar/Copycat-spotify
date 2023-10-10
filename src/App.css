@@ -10,7 +10,24 @@
 
 html, body {
     height: 100%;
+    background-color: aliceblue;
     margin: 0;
     padding: 0;
   }
   
+
+.container-box {
+    height:  75%;
+}
+
+.navbar {
+    height: 100%;
+}
+
+.player-box{
+    height: 72px;
+}
+
+.album-box{
+    height: 75%;
+}

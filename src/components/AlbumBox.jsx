@@ -1,53 +1,15 @@
 import React, { useState } from "react";
 import { AiFillPushpin } from "react-icons/ai";
+import { useData } from "./AlbumData";
 
 const AlbumsBox = () => {
-  const [albumData, setAlbumData] = useState([
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    {
-      imgSrc: "https://misc.scdn.co/liked-songs/liked-songs-64.png",
-      title: "Liked Songs",
-      songCount: Math.floor(Math.random() * 500),
-    },
-    // Add more album data objects as needed
-  ]);
+
+const {albumData} = useData()
 
   return (
-    <div>
+    
+    <div className="h-[1000px]" 
+      style={{ overflowY: "scroll" }}>
       {albumData.map((data, index) => (
         <div key={index} className="flex h-16 gap-4 mt-4 text-white">
           <div>
@@ -61,6 +23,7 @@ const AlbumsBox = () => {
               className="h-12 rounded-md"
             ></img>
           </div>
+          
           <div>
             <div>{data.title}</div>
             <div className="flex gap-2 text-gray-400">
