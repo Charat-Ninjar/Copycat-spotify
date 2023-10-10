@@ -6,7 +6,7 @@ import AlbumData from "./AlbumData";
 
 const NavbarBottomLeft = () => {
   return (
-    <div className="rounded-md flex-col bg-neutral-900 w-96 pt-5 pl-5 gap-5 z-10 h-full">
+    <div className="rounded-md flex-col bg-black-background w-96 pt-5 pl-5 gap-5 z-10 h-full">
       <div className="flex-col w-fit h-1/6">
         <div className="flex gap-3 icon">
           <svg
