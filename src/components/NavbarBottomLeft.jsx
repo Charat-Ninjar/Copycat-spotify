@@ -35,7 +35,7 @@ const NavbarBottomLeft = () => {
           <SuggestionPlaylist />
         </div>
       </div>
-      <div className="h-4/6">
+      <div className="h-5/6">
         <AlbumData>
           <AlbumsBox />
         </AlbumData>

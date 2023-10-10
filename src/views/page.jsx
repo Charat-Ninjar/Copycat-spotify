@@ -9,10 +9,10 @@ const Page = () => {
     <div className="bg-black flex-col h-screen">
       <div className="flex h-full">
         <div className="flex-col space-y-2 text-gray-200 ">
-          <div className="">
+          <div className="h-[12%]">
             <NavbarTopLeft />
           </div>
-          <div className="h-5/6">
+          <div className="h-[88%]">
             <NavbarBottomLeft />
           </div>
         </div>
