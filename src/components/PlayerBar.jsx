@@ -17,7 +17,7 @@ const PlayerBar = () => {
         </div>
         <div className="flex-col align-middle justify-center items-center">
             <div className="text-white text-sm">Do I Wanna Know?</div>
-            <div className="text-xs">Arctic Monkeys</div>
+            <div className  ="text-xs">Arctic Monkeys</div>
         </div>
         <div>
             <AiFillHeart className="fill-green-400"/>

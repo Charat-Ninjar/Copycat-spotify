@@ -14,3 +14,49 @@ html, body {
 .page-container {
   height: 100%;
 }
+
+
+.gradient-background {
+  background: linear-gradient(0deg, rgb(18,18,18) 74%, #05ff8a ); /* You can adjust the colors as needed */
+  /* Add other CSS properties for the container, like padding, margin, etc. */
+}
+
+.hoverable-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  max-width: 200px; /* Adjust the max width as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hoverable-item:hover .tooltip {
+  display: block;
+}
+
+.hoverable-item:hover .tooltip {
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 640px) {
+  .hoverable-item:hover .tooltip {
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}

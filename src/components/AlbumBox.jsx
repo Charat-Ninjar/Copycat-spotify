@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiFillPushpin } from "react-icons/ai";
-import { useData } from "./AlbumData";
+import { useData } from "../../../database/AlbumData";
 
 const AlbumsBox = () => {
 

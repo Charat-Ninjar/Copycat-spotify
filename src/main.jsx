@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter } from "react-router-dom";
 import AlbumsBox from "./components/AlbumBox.jsx";
-import AlbumData from "./components/AlbumData.jsx";
+import AlbumData from "../../database/AlbumData.jsx";
 
 const router = createBrowserRouter([
   {

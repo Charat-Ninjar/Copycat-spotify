@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarTopLeft from "./NavbarTopLeft";
 import NavbarBottomLeft from "./NavbarBottomLeft";
-import AlbumData from "./AlbumData";
+import AlbumData from "../../../database/AlbumData";
 
 const NavbarContainer = () => {
   return (

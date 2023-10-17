@@ -9,26 +9,34 @@ const NavbarTopLeft = () => {
   };
 
   return (
-    <div className="rounded-md flex-col bg-black-background w-96 pt-4 pl-5 space-y-4">
-      <div className="flex gap-3 icon" onClick={() => handleSearchClick("home")}>
+    <div className="rounded-md flex-col bg-black-background w-96 pt-4 pl-5 space-y-4 ">
+      <div
+        className="flex gap-3 icon hover:cursor-pointer"
+        onClick={() => handleSearchClick("home")}
+      >
         {/* style={{ fill: "rgb(179, 179, 179)" }} */}
         {selected === "search" ? (
-        <div className="w-7 h-7 ">
-          <GoHome className="w-7 h-7 fill-slate-300" />
-        </div>
-         ) : (
-<div className="w-7 h-7 ">
-          <GoHomeFill className="w-7 h-7 fill-white" />
-        </div> )} 
+          <div className="w-7 h-7 ">
+            <GoHome className="w-7 h-7 fill-slate-300" />
+          </div>
+        ) : (
+          <div className="w-7 h-7 ">
+            <GoHomeFill className="w-7 h-7 fill-white" />
+          </div>
+        )}
         <div
           className={`pb-5 ${
-            selected  === "search" ? "text-white" : "text-white-200 font-bold"
+            selected === "search" ? "text-white" : "text-white-200 font-bold"
           }`}
-        >Home</div>
-       
+        >
+          Home
+        </div>
       </div>
 
-      <div className="flex gap-3 icon ml-1" onClick={() => handleSearchClick("search")}>
+      <div
+        className="flex gap-3 icon ml-1 hover:cursor-pointer"
+        onClick={() => handleSearchClick("search")}
+      >
         {selected === "search" ? (
           <svg
             role="img"
@@ -60,7 +68,7 @@ const NavbarTopLeft = () => {
         )}
         <div
           className={`pb-5 ${
-            selected  === "search" ? "text-white font-bold" : "text-white-200"
+            selected === "search" ? "text-white font-bold" : "text-white-200"
           }`}
         >
           Search
