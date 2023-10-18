@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlinePlus, AiOutlineArrowRight } from "react-icons/ai";
 import SuggestionPlaylist from "./SuggestionPlaylist";
 import AlbumsBox from "./AlbumBox";
-import AlbumData from "../../../database/AlbumData";
+import AlbumData from "../../../spotify-database/src/AlbumData"
 
 const NavbarBottomLeft = () => {
   return (
